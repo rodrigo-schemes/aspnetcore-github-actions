@@ -19,10 +19,10 @@ jobs:
           dotnet-version: '7.0.x'
           
       - name: Restore
-        run: dotnet restore ./Exemplo.sln
+        run: dotnet restore ./Exemplo/Exemplo.sln
 
       - name: Build
-        run: dotnet build ./Exemplo.sln --configuration Release --no-restore
+        run: dotnet build ./Exemplo/Exemplo.sln --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./Exemplo.sln --configuration Release --no-restore
+        run: dotnet publish ./Exemplo/Exemplo.sln --configuration Release --no-restore
